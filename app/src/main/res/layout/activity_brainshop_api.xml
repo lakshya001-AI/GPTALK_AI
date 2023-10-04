@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context="gptalkai.gptalk.gptalk_ai.Brainshop_Api">
+
+    <EditText
+        android:id="@+id/userEdittext"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:textColor="@color/black"
+        android:hint="Write something here"
+        android:textColorHint="@color/black"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/getrreponseButton"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_58sdp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:text="get response"
+        app:layout_constraintTop_toBottomOf="@+id/userEdittext">
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/reponsetextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:padding="@dimen/_18sdp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getrreponseButton"
+        app:layout_constraintVertical_bias="0.046"
+        tools:layout_editor_absoluteX="-11dp">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

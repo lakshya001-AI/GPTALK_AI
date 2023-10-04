@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "743372039914",
+    "project_id": "gptalk-49e49",
+    "storage_bucket": "gptalk-49e49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743372039914:android:d2c728b04db60f4ca11993",
+        "android_client_info": {
+          "package_name": "gptalkai.gptalk.gptalk_ai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743372039914-9pcmsco49sjomqagto2lv6q0kt8pj8l9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gptalkai.gptalk.gptalk_ai",
+            "certificate_hash": "01884fbcacfdb4b22619c0f9dfe74f5c8ba2a3b6"
+          }
+        },
+        {
+          "client_id": "743372039914-hgtvu075kb887u2nhuqfp0iqlmrv3fni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZaAUSqRPsxcUJS4SjeBTWbixb7Ue7q9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743372039914-hgtvu075kb887u2nhuqfp0iqlmrv3fni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
