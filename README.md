@@ -1,6 +1,6 @@
 # GPTALK_AI - Mobile Chatbot with Voice Assistant
 
-![Logo](gptalkai.jpg)
+![Logo](gptalkai1.jpg)
 
 **GPTALK_AI** is a mobile application chatbot built in Android Studio using the OpenAI API and Brainshop API. This project was developed for the hackathon conducted by MultiversX and Encode Club. The application combines the power of advanced natural language processing (NLP) with voice assistant capabilities to provide an interactive and engaging user experience.
 
