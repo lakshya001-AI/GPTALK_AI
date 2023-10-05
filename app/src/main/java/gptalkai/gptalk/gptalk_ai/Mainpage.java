@@ -91,7 +91,7 @@ public class Mainpage extends AppCompatActivity {
         ChatbotButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Mainpage.this , Brainshop_Api.class);
+                Intent intent = new Intent(Mainpage.this , chatbotpage.class);
                 startActivity(intent);
             }
         });
@@ -99,7 +99,8 @@ public class Mainpage extends AppCompatActivity {
         VoiceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Mainpage.this , VoiceAssitentTest.class);
+                startActivity(intent);
             }
         });
 

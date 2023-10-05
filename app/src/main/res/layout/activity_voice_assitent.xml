@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbotbackground"
+    tools:context="gptalkai.gptalk.gptalk_ai.VoiceAssitent">
+
+    <ImageButton
+        android:id="@+id/roundImageButton"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/round_button1"
+        android:scaleType="centerInside"
+        android:src="@drawable/voice_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:backgroundTint="@color/black"
+        android:background="@color/black"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:textColor="@color/white"
+        android:text=""
+        android:textSize="@dimen/_17sdp"
+        android:padding="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/roundImageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

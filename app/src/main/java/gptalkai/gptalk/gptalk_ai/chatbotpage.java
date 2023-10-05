@@ -48,7 +48,7 @@ public class chatbotpage extends AppCompatActivity {
             = MediaType.get("application/json; charset=utf-8");
 
     OkHttpClient client = new OkHttpClient();
-
+    OkHttpClient client1 = new OkHttpClient();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +76,7 @@ public class chatbotpage extends AppCompatActivity {
                 String question = messageEdittext.getText().toString().trim(); // getting the requirred text from the edit text
                 addToChat(question, Message.Sent_By_Me);
                 messageEdittext.setText("");
-                callAPI(question);
+                sendMessage(question);
                 welcometextview.setVisibility(View.GONE);
             }
         });
@@ -145,5 +145,42 @@ public class chatbotpage extends AppCompatActivity {
                 addResponse("Failed to load response due to " + e.getMessage());
             }
         });
+    }
+
+    void sendMessage(String question){
+        messageList.add(new Message("Typing... ",Message.Sent_By_bot));
+        String apiUrl = "http://api.brainshop.ai/get?bid=178162&key=4z4e8AY4qg4OJD4H&uid=[uid]&msg=" + question;
+        Request request = new Request.Builder()
+                .url(apiUrl)
+                .build();
+
+        client1.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
+                addResponse("Failed to load response due to " + e.getMessage());
+            }
+
+            @Override
+            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                if (response.isSuccessful()){
+                    try {
+                        JSONObject jsonResponse = new JSONObject(response.body().string());
+                        String chatbotResponse = jsonResponse.getString("cnt");
+                        addResponse(chatbotResponse.trim());
+                    }catch (JSONException e){
+                        e.printStackTrace();
+                    }
+                }
+                else {
+                    addResponse("Failed to load response due to " + response.body().string());
+                }
+
+            }
+        });
+
+
+
+
+
     }
 }

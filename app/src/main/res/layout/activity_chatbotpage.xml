@@ -38,10 +38,10 @@
             android:layout_toLeftOf="@id/send_btn"
             android:background="@drawable/rounded_corner"
             android:hint="Write here "
+            android:padding="16dp"
             android:textColor="@color/white"
-            android:textSize="@dimen/_16sdp"
             android:textColorHint="@color/white"
-            android:padding="16dp" />
+            android:textSize="@dimen/_16sdp" />
 
         <ImageButton
             android:id="@+id/send_btn"
